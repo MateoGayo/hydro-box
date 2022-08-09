@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HydroBox - Log In</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="header">
+        <nav>
+            <ul>
+                <li class="header__item"><a href="../index.html"><img class="header__foto" src="../recursos/Captura de pantalla 2022-08-08 185612.jpg" alt="logo de la empresa"></a></li>
+                <li class="header__item"><a href="contacto.html">Contacto</a></li>
+                <li id="iniciar-boton" class="header__item"><a href="log-in.html">Iniciar Sesión</a></li>
+                <li id="logout-boton" class="header__item"> Log Out</li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <section>
+            <form class="main__login">
+                <h1 class="main__titulo">Iniciar Sesión</h1>
+                <form id="formulario-login">
+                        <label for="correo-login">
+                            Dirección de Correo Electronico
+                        </label>
+                        <input type="text" id="correo-login" name="usuario">
+                        <label for="contrasenia-login">
+                            Contraseña
+                        </label>
+                        <input type="password" id="contrasenia-login" name="contrasenia">
+                        <label>
+                            <input type="submit" value="enviar">
+                        </label>
+                </form>
+            </form>
+        </section>
+        <script src="../index.js"></script>
+    </main>
+</body>
+</html>

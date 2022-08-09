@@ -28,3 +28,43 @@ const noVerInfo = document.querySelector ("p")
 botoninfo.addEventListener("click", () => {
     noVerInfo.classList.toggle("verInformacion")
 })
+
+const usuario = {
+    correo : "mateo@gmail.com",
+    contrasenia : "mateo"
+}
+const login = document.querySelector ("#formulario-login")
+const inputCorreo = document.querySelector ("#correo-login")
+const inputContrasenia = document.querySelector ("#contrasenia-login")
+const iniciar = document.querySelector ("#iniciar-boton")
+const logout = document.querySelector ("logout-boton")
+
+login.onsubmit = (e) => {
+    e.preventDefault()
+    if (inputCorreo.value === usuario.correo && inputContrasenia.value === usuario.contrasenia) {
+        iniciar.style.display = "none"
+        logout.style.display = "flex"
+        localStorage.setItem("usuario", true)
+    } else{
+        login.reset()
+        alert("el usuario o la contraseña son incorrectos")
+    }
+}
+
+function usuarioLog (){
+    const token = localStorage.getItem ("usuario")
+    if (token === true ) {
+        iniciar.style.display = "none"
+        logout.style.display = "flex"
+    } else if (token !== "true"){
+        iniciar.style.display = "flex"
+        logout.style.display = "none"
+    }
+}
+
+usuarioLog()
+
+logout.onclick = () => {
+    localStorage.removeItem("usuario")
+    location.reload()
+}
