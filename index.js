@@ -1,5 +1,4 @@
 let consultas = []
-
 class consulta {
     constructor(nombre, apellido, email, consulta){
         this.nombre = nombre;
@@ -48,7 +47,10 @@ login.onsubmit = (e) => {
         swal("Bienvenido", "Has iniciado sessión correctamente", "success");
     } else{
         login.reset()
-        alert("el usuario o la contraseña son incorrectos")
+        swal({
+            text: "El correo o la contraseña que has ingresado es incorrecta",
+            icon: "error",
+        });
     }
 }
 
