@@ -40,11 +40,12 @@ const iniciar = document.querySelector ("#iniciar-boton")
 const logout = document.querySelector ("logout-boton")
 
 login.onsubmit = (e) => {
-    e.preventDefault()
+    e.preventDefault();
     if (inputCorreo.value === usuario.correo && inputContrasenia.value === usuario.contrasenia) {
         iniciar.style.display = "none"
         logout.style.display = "flex"
         localStorage.setItem("usuario", true)
+        swal("Bienvenido", "Has iniciado sessión correctamente", "success");
     } else{
         login.reset()
         alert("el usuario o la contraseña son incorrectos")
