@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HydroBox - Carrito</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://kit.fontawesome.com/8384a8c248.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header">
+        <nav>
+            <ul>
+                <li class="header__item"><a href="../index.html"><img class="header__foto" src= "../recursos/Captura de pantalla 2022-08-08 185612.jpg" alt="logo de la empresa"></a></li>
+                <li class="header__item"><a href="../index.html">Inicio</a></li>
+                <li class="header__item"><a href="contacto.html">Contacto</a></li>
+                <li class="header__item"><a href="tienda.html">Tienda</a></li>
+                <li class="header__item" id="iniciar-boton"><a href="log-in.html"><i class="fa-solid fa-user"></i></a></li>
+                <li class="header__item"><a href="registrarse.html"><i class="fa-solid fa-user-plus"></i></a></li>
+                <li class="header__item"><a href="carrito.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="mainc">
+        <div id="containerCarrito">
+        </div>
+        <p>Precio total: $ <span id="precioTotal">0</span></p>
+        <button id="vaciar-carrito">Vaciar Carrito</button>
+    </main>
+    <footer class="footer">
+        <div>
+            <p class="footer__derechos">© 2022 Hydro Box, inc. Todos los derechos reservados.</p>
+        </div>
+        <div>
+            <ul class="footer__contenido">
+                <li class="footer__redes">
+                    <a href="https://www.instagram.com/hydro.box/?hl=es-la"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li class="footer__redes">
+                    <a href="https://www.youtube.com/channel/UCSAdKc25BydLoaA0nSv2aiA"><i class="fa-brands fa-youtube"></i></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <script src="../actualizarcarrito.js"></script>
+    <script src="../carrito.js"></script>
+</body>
+</html>
+

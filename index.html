@@ -6,21 +6,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HydroBox-Inicio</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/8384a8c248.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header class="header">
         <nav>
             <ul>
                 <li class="header__item"><a href="index.html"><img class="header__foto" src="recursos/Captura de pantalla 2022-08-08 185612.jpg" alt="logo de la empresa"></a></li>
+                <li class="header__item"><a href="index.html">Inicio</a></li>
                 <li class="header__item"><a href="paginas/contacto.html">Contacto</a></li>
-                <li class="header__item" id="iniciar-boton"><a href="paginas/log-in.html">Iniciar Sesión</a></li>
+                <li class="header__item"><a href="paginas/tienda.html">Tienda</a></li>
+                <li class="header__item" id="iniciar-boton"><a href="paginas/log-in.html"><i class="fa-solid fa-user"></i></a></li>
+                <li class="header__item"><a href="paginas/registrarse.html"><i class="fa-solid fa-user-plus"></i></a></li>
+                <li class="header__item"><a href="paginas/carrito.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <h1>hola mundo!</h1>
-        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-        <script src="index.js"></script>
+    <main class="maini">
+        <div> 
+            <img class="maini__img" src="recursos/Captura de pantalla 2022-09-05 151630.jpg" alt="foto ilustrativa de sistema">
+            <a href="paginas/tienda.html" class="miani__boton">Ver Sistemas</a>
+        </div>
+        <div class="maini__div">
+            <div>
+                <img class="maini__imagen" src="recursos/Captura de pantalla 2022-09-05 195602.jpg" alt="foto ilustrativa de macetas, caja y sistema">
+            </div>
+            <div>
+                <h1 class="maini__text">¿En que consisten los sistemas hidroponicos DWC?</h1>
+                <p class="maini__text">El cultivo en sistemas de hidroponía DWC consiste en mantener las raíces de nuestras plantas sumergidas en solución de nutrientes las 24hs. Para eso desarrollamos macetas hidropónicas únicas en el mercado que ayudan a evitar los problemas más frecuentes del cultivo en agua.</p>
+            </div>
+        </div>
     </main>
+    <footer class="footer">
+        <div>
+            <p class="footer__derechos">© 2022 Hydro Box, inc. Todos los derechos reservados.</p>
+        </div>
+        <div>
+            <ul class="footer__contenido">
+                <li class="footer__redes">
+                    <a href="https://www.instagram.com/hydro.box/?hl=es-la"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li class="footer__redes">
+                    <a href="https://www.youtube.com/channel/UCSAdKc25BydLoaA0nSv2aiA"><i class="fa-brands fa-youtube"></i></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>
