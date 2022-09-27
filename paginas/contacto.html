@@ -27,37 +27,27 @@
             <div class="formulario-consulta">
                 <h1>Contacto</h1>
                 <form id="form">
-                    <div class="mb-3 form-consulta">
-                        <label for="exampleInputEmail1" class="form-label">
-                            Nombre
-                        </label>
+                    <div class="field">
+                        <label for="name">Nombre</label>
                         <input type="text" class="form-control" placeholder="Nombre" name="name" required>
                     </div>
-                    <div class="mb-3 form-consulta">
-                        <label for="exampleInputPassword1" class="form-label">
-                            Apellido
-                        </label>
+                    <div class="field">
+                        <label for="phone">Apellido</label>
                         <input type="text" class="form-control" placeholder="Apellido" name="last name" required>
                     </div>
-                    <div class="mb-3 form-consulta">
-                        <label for="exampleInputPassword1" class="form-label">
-                            Telefono
-                        </label>
+                    <div class="field">
+                        <label for="email">Telefono</label>
                         <input type="number" class="form-control" placeholder="Telefono" name="phone" required>
                     </div>
-                    <div class="mb-3 form-consulta">
-                        <label for="exampleInputPassword1" class="form-label">
-                            Email
-                        </label>
+                    <div class="field">
+                        <label for="message">Correo Electronico</label>
                         <input type="email" class="form-control" placeholder="Correo electronico" name="mail" required>
                     </div>
-                    <div class="mb-3 form-consulta">
-                        <label for="exampleInputPassword1" class="form-label">
-                            Mensaje
-                        </label>
+                    <div class="field">
+                        <label for="reply_to">Consulta</label>
                         <textarea type="email" class="form-control" placeholder="Mensaje" name="message" required></textarea>
                     </div>
-                    <input type="submit" class="btn btn-succes" id="button" value="Enviar Consulta" >
+                    <input type="submit" id="button" value="Enviar Consulta" >
                 </form>
                 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
                 <script type="text/javascript"> emailjs.init('VBXW3XHARGmfVrAqt')</script>

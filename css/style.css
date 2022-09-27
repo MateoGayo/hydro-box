@@ -145,12 +145,7 @@ ul{
         padding: 20px;
         margin-top: 50px;
         border: 0.094rem solid black;
-        background-color: white; 
-    }
-    .form-consulta{
-        margin-top: 1.4rem; 
-        margin-bottom: 1.4rem;
-    }
+        background-color: white; }
 
 
 .mainl{
@@ -227,3 +222,30 @@ ul{
     display: none;
 }
 
+
+.field {
+    margin-bottom: 10px;
+}
+
+.field label {
+    display: block;
+    font-size: 12px;
+    color: #777;
+}
+
+.field input {
+    display: block;
+    min-width: 250px;
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+input[type="submit"] {
+    display: block;
+    border-radius: 5px;
+    padding: 6px 30px;
+    font-size: 14px;
+    background-color: black;
+    color: #fff;
+    border: none
+}
