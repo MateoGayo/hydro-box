@@ -23,28 +23,46 @@
         </nav>
     </header>
     <main class="mainco">
-            <form id="formulario-consulta">
+        <div class="container">
+            <div class="formulario-consulta">
                 <h1>Contacto</h1>
-                <label for="nombre-consulta">
-                    Nombre
-                </label>
-                <input type="text" id="nombre-consulta">
-                <label for="apellido-consulta">
-                    Apellido
-                </label>
-                <input type="text" id="apellido-consulta">
-                <label for="email-consulta">
-                    Email
-                </label>
-                <input type="email" id="email-consulta">
-                <label for="consulta-consulta">
-                    Consulta
-                </label>
-                <input type="text" id="consulta-consulta">
-                <label>
-                    <input type="submit" value="Enviar" id="sumbit">
-                </label>
-            </form>
+                <form id="form">
+                    <div class="mb-3 form-consulta">
+                        <label for="exampleInputEmail1" class="form-label">
+                            Nombre
+                        </label>
+                        <input type="text" class="form-control" placeholder="Nombre" name="name" required>
+                    </div>
+                    <div class="mb-3 form-consulta">
+                        <label for="exampleInputPassword1" class="form-label">
+                            Apellido
+                        </label>
+                        <input type="text" class="form-control" placeholder="Apellido" name="last name" required>
+                    </div>
+                    <div class="mb-3 form-consulta">
+                        <label for="exampleInputPassword1" class="form-label">
+                            Telefono
+                        </label>
+                        <input type="number" class="form-control" placeholder="Telefono" name="phone" required>
+                    </div>
+                    <div class="mb-3 form-consulta">
+                        <label for="exampleInputPassword1" class="form-label">
+                            Email
+                        </label>
+                        <input type="email" class="form-control" placeholder="Correo electronico" name="mail" required>
+                    </div>
+                    <div class="mb-3 form-consulta">
+                        <label for="exampleInputPassword1" class="form-label">
+                            Mensaje
+                        </label>
+                        <textarea type="email" class="form-control" placeholder="Mensaje" name="message" required></textarea>
+                    </div>
+                    <input type="submit" class="btn btn-succes" id="button" value="Enviar Consulta" >
+                </form>
+                <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+                <script type="text/javascript"> emailjs.init('VBXW3XHARGmfVrAqt')</script>
+            </div>
+        </div>
         <script src="../index.js"></script>
     </main>
     <footer class="footer">
@@ -62,5 +80,6 @@
             </ul>
         </div>
     </footer>
+    <script src="../contacto.js"></script>
 </body>
 </html>
